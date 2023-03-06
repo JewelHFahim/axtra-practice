@@ -22,7 +22,7 @@ const OurServices = () => {
 
 
     return (
-        <div className='relative'>
+        <div className='relative mx-20'>
 
             <div className='w-[1px] h-[120px] bg-slate-400 ml-[40%] mb-10' ></div>
             <div className='ml-[30%] text-left'>
@@ -39,10 +39,10 @@ const OurServices = () => {
             </p>
 
 
-
-
-            {/* <div className='flex justify-between justify-items-center px-10 py-20'>
-
+            {/* Search Engine */}
+            <div className='vsb mt-20'>
+            <hr />
+                <div className='flex justify-between justify-items-center  py-20'>
                     <h1 className='text-[40px] font-bold'>SEARCH ENGINE <br /> OPTIMIZATION</h1>
                     <p className='ml-[-200px] text-lg'>We help brands stand out through aweful, <br /> elegant visual design. Our design mainly philosophy. <br />
                         <span>+ Logo Design</span> <br />
@@ -50,36 +50,19 @@ const OurServices = () => {
                         <span>+ Promotion </span>
                     </p>
 
-
                     <Bounce bottom>
-                        <div className='explore w-[180px] h-[180px] rounded-full border border-slate-600 text-center flex justify-center items-center text-white hover:text-black'>
-                            <p className='flex justify-center items-center cursor-pointer scr '>Explore Us <BsArrowUpRight className='ml-2' /></p>
+                        <div className='details flex justify-center items-cente'>
+                            <p className='flex justify-center items-center cursor-pointer'>Details <BsArrowUpRight className='ml-2' /></p>
                         </div>
                     </Bounce>
-                </div> */}
-
-            <div className='mt-32 h-[400px] border border-red-600 flex justify-center justify-items-center m-5'>
-                <a href="#!" className='border border-green-600 w-[100%] h-[100%]'>
-                <div className='flex justify-between justify-items-center px-10 py-20'>
-
-<h1 className='text-[40px] font-bold'>SEARCH ENGINE <br /> OPTIMIZATION</h1>
-<p className='ml-[-200px] text-lg'>We help brands stand out through aweful, <br /> elegant visual design. Our design mainly philosophy. <br />
-    <span>+ Logo Design</span> <br />
-    <span>+ Advertisement</span> <br />
-    <span>+ Promotion </span>
-</p>
-
-
-<Bounce bottom>
-    <div className='explore w-[180px] h-[180px] rounded-full border border-slate-600 text-center flex justify-center items-center text-white hover:text-black'>
-        <p className='flex justify-center items-center cursor-pointer scr '>Explore Us <BsArrowUpRight className='ml-2' /></p>
-    </div>
-</Bounce>
-</div>
-                    <img src={img} alt="img-cover" class="follow-img" />
-
-                </a>
+                </div>
+                <img src={img} alt="img-cover" class="follow-img" />
+                <hr />
             </div>
+
+            {/* Email Marketing */}
+           
+
 
 
         </div>
