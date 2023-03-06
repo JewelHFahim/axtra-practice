@@ -1,0 +1,31 @@
+/* Cursore Animation 1st */
+
+#cursor {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #61dafb;
+    ;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .1s ease;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+}
+
+#cursor2 {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: #61dafb;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) .5s;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+}

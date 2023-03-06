@@ -1,0 +1,31 @@
+a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: #000;
+    overflow: hidden;
+    transition: ease .5s all;
+    display: block;
+    margin: .5rem 0;
+    z-index: 2;
+    padding: 15px 30px 15px 90px;
+    text-shadow: 3px 5px 10px rgba(255,255,255,1);
+  }
+  
+
+  
+  a:hover .follow-img {
+    opacity: 1;
+  }
+  
+  .follow-img {
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    box-sizing: border-box;
+    transition: ease .2s;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover;
+  }
