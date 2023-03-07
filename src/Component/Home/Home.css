@@ -1,31 +1,35 @@
 /* Cursore Animation 1st */
-
 #cursor {
     position: fixed;
     width: 50px;
-    height: 50px;
-    border: 1px solid #61dafb;
-    ;
+    height: 60px;
     border-radius: 50%;
     left: 0;
     top: 0;
     pointer-events: none;
     transform: translate(-50%, -50%);
     transition: .1s ease;
-    transition-duration: .3s;
+    transition-duration: .4s;
     transition-timing-function: ease-out;
+    behavior: 'smooth';
+
 }
 
 #cursor2 {
     position: fixed;
-    width: 10px;
-    height: 10px;
-    background-color: #61dafb;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     left: 0;
     top: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) .5s;
-    transition-duration: .5s;
+    transition-duration: 1s;
     transition-timing-function: ease-out;
+    margin-top: -25px;
+    margin-left: -25px;
+    behavior: 'smooth';
+
+    
 }
+

@@ -3,21 +3,11 @@ import { Fade } from 'react-reveal';
 import "./OurServices.css";
 import { BsArrowUpRight } from 'react-icons/bs';
 import Bounce from 'react-reveal/Bounce';
-import img from "../../../Assets/2.jpg"
+import img from "../../../Assets/2.jpg";
 
 
 
 const OurServices = () => {
-
-    // Animation Image
-    var cursor = document.querySelector(".follow-img");
-    document.addEventListener("mousemove", (e) => {
-        var x = e.clientX;
-        var y = e.clientY;
-        cursor.style.left = `${x}px`;
-        cursor.style.top = `${y}px`;
-
-    })
 
 
 
@@ -39,11 +29,11 @@ const OurServices = () => {
             </p>
 
 
-            {/* Search Engine */}
-            <div className='vsb mt-20'>
-            <hr />
-                <div className='flex justify-between justify-items-center  py-20'>
-                    <h1 className='text-[40px] font-bold'>SEARCH ENGINE <br /> OPTIMIZATION</h1>
+            {/* Section One */}
+            {/* <hr className='mt-32 mx-20'/>
+            <div className='vsb  h-[400px] mx-20'>
+                 <div className='flex justify-between justify-items-center  py-20'>
+                    <h1 className='text-[32px] font-bold'>SEARCH ENGINE <br /> OPTIMIZATION</h1>
                     <p className='ml-[-200px] text-lg'>We help brands stand out through aweful, <br /> elegant visual design. Our design mainly philosophy. <br />
                         <span>+ Logo Design</span> <br />
                         <span>+ Advertisement</span> <br />
@@ -56,14 +46,14 @@ const OurServices = () => {
                         </div>
                     </Bounce>
                 </div>
+
                 <img src={img} alt="img-cover" class="follow-img" />
-                <hr />
+
             </div>
-
-            {/* Email Marketing */}
-           
+            <hr className='mx-20'/>  */}
 
 
+            
 
         </div>
     );

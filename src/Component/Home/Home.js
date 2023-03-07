@@ -5,6 +5,9 @@ import DigitalMarkeing from './DigitalMarkeing/DigitalMarkeing';
 import "./Home.css";
 import OurClients from './OurClients/OurClients';
 import OurServices from './OurServices/OurServices';
+import logo1 from "../../Assets/logo-1.png";
+import logo2 from "../../Assets/logo-2.png";
+import Test from '../Test/Test';
 
 const Home = () => {
     // 1st cursore animation
@@ -19,16 +22,22 @@ const Home = () => {
 
 
     return (
-        <div>
+        <div className='w-[100%]'>
             <Navbar/>
             {/* 1st cursore animation */}
-            <div id="cursor"></div>
-            <div id="cursor2" ></div>
+
+            {/* <div id="cursor"></div>
+            <div id="cursor2" ></div> */}
+
+
+            <div><img src={logo1} id="cursor" alt="" /></div>
+            <div><img src={logo2} id="cursor2" alt="" /></div>
 
             <DigitalMarkeing/>
             <OurClients/>
             <AboutUs/>
             <OurServices/>
+            <Test/>
 
 
 

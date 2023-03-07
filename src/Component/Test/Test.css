@@ -1,0 +1,43 @@
+  
+.details{
+    color: black;
+    font-size: 1.12rem;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: flex;
+  }
+
+  .details:hover{
+    transition: all 1s ease-in-out;
+    transform: scale(1.1);
+    background-color: black;
+    color: white
+ }
+
+
+/* text */
+.content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    left: 100px;
+    text-align: center;
+}
+
+
+
+.cursor-follow{
+    position: absolute;
+    background-image: url(../../Assets/2.jpg);
+    background-size: cover;
+    width: 300px;
+    mix-blend-mode: difference;
+    height: 400px;
+    z-index: 2 ;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(5px, 5px);
+}    

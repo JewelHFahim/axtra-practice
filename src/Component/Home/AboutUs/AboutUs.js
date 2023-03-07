@@ -10,16 +10,15 @@ import Bounce from 'react-reveal/Bounce';
 
 const AboutUs = () => {
     return (
-        <div className=' bg-black flex h-[1200px]'>
+        <div className=' bg-black flex h-[1200px] p-5'>
 
 
-            <div className='w-[55%] img2-container'>
-                <img src={img} className="w-[55%] mx-auto my-auto" alt="" />
-            </div>
+        
+             <div className='w-[55%] h-[100%]  img2-container'>
+            </div> 
 
 
-
-            <div className='w-[45%] relative'>
+             <div className='w-[45%] relative'>
                 <div className="w-[1px] h-32 bg-white"></div>
                 <div className='text-white ml-[-100px] mt-10'>
                     <Fade bottom delay={500}><h3 className='text-[24px]'>WHO WE ARE</h3></Fade>
@@ -47,7 +46,8 @@ const AboutUs = () => {
 
 
 
-            </div>
+            </div> 
+
 
 
 

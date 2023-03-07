@@ -1,16 +1,14 @@
-.explore:hover{
+.explore:hover {
     transition: all 1s ease-in-out;
     transform: scale(1.1);
     background-color: white;
     color: black;
 }
 
-.img2-container{
-    display: flex;
-    justify-items: center;
-}
-
-.img2-container img{
-   transition: all 0.2s ease-in-out;
-   scroll-behavior: smooth;
+.img2-container {
+    background-image: url(../../../Assets/2.jpg);
+    background-position: 20%;
+    background-repeat: no-repeat;
+    background-size: 550px 800px;
+    background-attachment: fixed;
 }
