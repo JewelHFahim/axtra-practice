@@ -1,59 +1,43 @@
-import React, { useEffect, useRef } from 'react';
+import React from "react";
+import img from "../../Assets/2.jpg";
 import "./Test.css";
-import Bounce from 'react-reveal/Bounce';
-// import img from "../../Assets/2.jpg";
-import { BsArrowUpRight } from 'react-icons/bs';
-import {gsap} from 'gsap';
-
-
-
 
 const Test = () => {
 
-    // Animation Image
-    function Appp(){
-        let cursor = useRef(null);
-        let tl = gsap.timeline();
-        let posX = 0;
-        let posY = 0;
-        let mouseX = 0;
-        let mouseY = 0;
-        useEffect(()=>{
-            tl.to({}, 0.016, {
-                repeat: -1,
-                onRepeat: function(){
-                    posX +=(mouseX - posX) / 10;
-                    posY +=(mouseY - posY) / 10;
-                    tl.set(cursor, {
-                        css:{
-                            left: posX - 50,
-                            top: posY - 50,
-                        }
-                    })
-                }
-            })
-            document.addEventListener("mousemove", function(e){
-                mouseX = e.pageX;
-                mouseY = e.pageY;
-            })
-        })
 
-    }
+  const link = document.querySelectorAll(".link");
+  const linkHoverReveal = document.querySelectorAll(".hover-reveal");
+  const linkImages = document.querySelectorAll(".hidden-img");
 
+  for (let i = 0; i < link.length; i++) {
+    link[i].addEventListener("mousemove", (e) => {
+      linkHoverReveal[i].style.opacity = 1;
+      linkHoverReveal[i].style.transform = `translate(-100%, -50% )`;
+      linkImages[i].style.transform = "scale(1, 1)";
+      linkHoverReveal[i].style.left = e.clientX + "px";
+    });
 
-    return (
+    link[i].addEventListener("mouseleave", (e) => {
+      linkHoverReveal[i].style.opacity = 0;
+      linkHoverReveal[i].style.transform = `translate(-50%, -50%)`;
+      linkImages[i].style.transform = "scale(0.8, 0.8)";
+    });
+  }
 
-        <div className=' border border-red-600 h-32'>
-
-            <div className="content text-black">
-                <h1>Savage</h1>
-                <h1>Savage</h1>
-                <h1>Savage</h1>
+  return (
+    <nav>
+      <div className="vsb1 border border-green-600 p-2">
+        <li>
+          <div className="link border border-red-600">
+            <span className="text-[40px] m-10">Welcome</span>
+            <div className="hover-reveal">
+              <img src={img} className="hidden-img" alt="" />
             </div>
-            <div className="cursor-follow" ref={ (el, cursor) => cursor = el}  ></div>
-        </div>
-
-    );
+          </div>
+        </li>
+      </div>
+    </nav>
+  );
 };
 
 export default Test;

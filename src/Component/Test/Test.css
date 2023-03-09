@@ -1,43 +1,45 @@
-  
-.details{
-    color: black;
-    font-size: 1.12rem;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 1px solid gray;
-    display: flex;
+/* nav {
+    min-height: 500px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
   }
-
-  .details:hover{
-    transition: all 1s ease-in-out;
-    transform: scale(1.1);
-    background-color: black;
-    color: white
- }
-
-
-/* text */
-.content{
-    position: absolute;
+  
+  li {
+    list-style: none;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .vsb1 {
+    width: 80%;
+  }
+  
+  .link {
     display: flex;
-    flex-direction: column;
-    top: 100px;
-    left: 100px;
-    text-align: center;
-}
-
-
-
-.cursor-follow{
+    padding: 4rem 0 2rem 0;
+    z-index: 10;
+    justify-content: space-between;
+  }
+  
+  .hover-reveal {
     position: absolute;
-    background-image: url(../../Assets/2.jpg);
-    background-size: cover;
     width: 300px;
-    mix-blend-mode: difference;
     height: 400px;
-    z-index: 2 ;
-    user-select: none;
+    top: 50%;
+    left: 50%;
     pointer-events: none;
-    transform: translate(5px, 5px);
-}    
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.5s ease-out;
+  }
+  
+  .hover-reveal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    transition: transform 0.4s ease-out;
+  } */

@@ -37,8 +37,6 @@ const Home = () => {
             <OurClients/>
             <AboutUs/>
             <OurServices/>
-            <Test/>
-
 
 
         </div>
