@@ -5,9 +5,7 @@ function App() {
 
   return (
     <div className="w">
-
       <Home />
-
     </div>
   );
 }

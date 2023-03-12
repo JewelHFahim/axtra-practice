@@ -7,7 +7,8 @@ import OurClients from './OurClients/OurClients';
 import OurServices from './OurServices/OurServices';
 import logo1 from "../../Assets/logo-1.png";
 import logo2 from "../../Assets/logo-2.png";
-import Test from '../Test/Test';
+import FeaturedSlider from '../FeaturedSlider/FeaturedSlider';
+import Parallax from '../Parallax/Parallax';
 
 const Home = () => {
     // 1st cursore animation
@@ -37,6 +38,11 @@ const Home = () => {
             <OurClients/>
             <AboutUs/>
             <OurServices/>
+            <FeaturedSlider/>
+
+            {/* <ClientReview/> */}
+
+            <Parallax/>
 
 
         </div>
