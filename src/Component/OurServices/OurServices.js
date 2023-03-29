@@ -1,35 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Fade } from 'react-reveal';
 import "./OurServices.css";
 import { BsArrowUpRight } from 'react-icons/bs';
 import Bounce from 'react-reveal/Bounce';
-import search from "../../../Assets/Services/1.jpg";
-import email from "../../../Assets/Services/2.png";
-import content from "../../../Assets/Services/3.png";
-import social from "../../../Assets/Services/4.png";
+import search from "../../Assets/Services/1.jpg";
+import email from "../../Assets/Services/2.png";
+import social from "../../Assets/Services/4.png";
 
 
 
 const OurServices = () => {
 
-    const link = document.querySelectorAll(".link");
-    const linkHoverReveal = document.querySelectorAll(".hover-reveal");
-    const linkImages = document.querySelectorAll(".hidden-img");
+    useEffect(() => {
 
-    for (let i = 0; i < link.length; i++) {
-        link[i].addEventListener("mousemove", (e) => {
-            linkHoverReveal[i].style.opacity = 1;
-            linkHoverReveal[i].style.transform = `translate(-100%, -50% )`;
-            linkImages[i].style.transform = "scale(1, 1)";
-            linkHoverReveal[i].style.left = e.clientX + "px";
-        });
+        const link = document.querySelectorAll(".link");
+        const linkHoverReveal = document.querySelectorAll(".hover-reveal");
+        const linkImages = document.querySelectorAll(".hidden-img");
 
-        link[i].addEventListener("mouseleave", (e) => {
-            linkHoverReveal[i].style.opacity = 0;
-            linkHoverReveal[i].style.transform = `translate(-50%, -50%)`;
-            linkImages[i].style.transform = "scale(0.8, 0.8)";
-        });
-    }
+        for (let i = 0; i < link.length; i++) {
+            link[i].addEventListener("mousemove", (e) => {
+                linkHoverReveal[i].style.opacity = 1;
+                linkHoverReveal[i].style.transform = `translate(-100%, -50% )`;
+                linkImages[i].style.transform = "scale(1, 1)";
+                linkHoverReveal[i].style.left = e.clientX + "px";
+            });
+
+            link[i].addEventListener("mouseleave", (e) => {
+                linkHoverReveal[i].style.opacity = 0;
+                linkHoverReveal[i].style.transform = `translate(-50%, -50%)`;
+                linkImages[i].style.transform = "scale(0.8, 0.8)";
+            });
+        }
+    }, [])
 
 
 
@@ -134,40 +136,6 @@ const OurServices = () => {
                     </li>
                 </div>
             </nav>
-
-            {/* Social Marketing */}
-            <hr className='mx-20 ' />
-            <nav className='p-10'>
-                <div className="vsb1">
-                    <li className=''>
-                        <div className="link">
-                            <h1 className='text-[32px] font-bold'>SOCIAL<br /> MARKETING</h1>
-                            <p className=' text-lg'>We help brands stand out through aweful, elegant <br /> visual design. Our design mainly philosophy. <br />
-                                <span>+ Logo Design</span> <br />
-                                <span>+ Advertisement</span> <br />
-                                <span>+ Promotion </span>
-                            </p>
-
-                            <Bounce bottom>
-                                <div className='details flex justify-center items-cente'>
-                                    <p className='flex justify-center items-center cursor-pointer'>Details <BsArrowUpRight className='ml-2' /></p>
-                                </div>
-                            </Bounce>
-
-                            <div className="hover-reveal">
-                                <img src={content} className="hidden-img" alt="" />
-                            </div>
-                        </div>
-                    </li>
-                </div>
-            </nav>
-
-
-
-
-
-
-
 
         </div>
     );

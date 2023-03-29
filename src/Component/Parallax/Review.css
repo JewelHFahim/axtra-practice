@@ -1,0 +1,28 @@
+.slick-slider{
+    position: relative;
+}
+.slick-next:before {
+    content: '→';
+    position: absolute;
+    top: 200px !important;
+    left: -260px;
+}
+
+.slick-prev:before {
+    position: absolute;
+    top: 200px !important;
+    left: 245px;
+}
+
+
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 45px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(187, 187, 187);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

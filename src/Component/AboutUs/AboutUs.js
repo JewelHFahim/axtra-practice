@@ -1,7 +1,6 @@
 import React from 'react';
 import "./AboutUs.css";
 import { BsArrowUpRight } from 'react-icons/bs';
-import img from "../../../Assets/2.jpg";
 import  Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
 

@@ -7,10 +7,9 @@
 
 .heading-primary-main {
     display: block;
-    font-size: 250px;
+    font-size: 280px;
     font-weight: 700;
     line-height: 250px;
-    /*  Animation decalaration   */
     animation-name: moveInleft;
     animation-duration: 3s;
 }
@@ -31,19 +30,14 @@
     }
 }
 
-
-
-
 .heading-primary-sub {
     display: block;
-    font-size: 250px;
+    font-size: 280px;
     font-weight: 700;
     line-height: 0;
     position: absolute;
     right: 0;
     padding-top: 90px;
-
-
     animation-name: moveInRight;
     animation-duration: 4s;
 }

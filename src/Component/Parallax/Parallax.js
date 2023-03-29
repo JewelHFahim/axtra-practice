@@ -1,17 +1,5 @@
 import React from 'react';
 import "./Parallax.css";
-import img1 from "./Asstets/1.png";
-import img2 from "./Asstets/2.png";
-import img3 from "./Asstets/3.png";
-import img4 from "./Asstets/4.png";
-import img5 from "./Asstets/5.png";
-import img6 from "./Asstets/6.png";
-import img7 from "./Asstets/7.png";
-import img8 from "./Asstets/8.png";
-import img9 from "./Asstets/9.png";
-import img10 from "./Asstets/10.png";
-import img11 from "./Asstets/11.png";
-import img12 from "./Asstets/12.png";
 import img13 from "./Asstets/PNG/img1.png";
 import img14 from "./Asstets/PNG/img2.png";
 import img15 from "./Asstets/PNG/img3.png";
@@ -45,8 +33,6 @@ const Parallax = () => {
             <img src={img18} className="layer" data-speed="-3" alt="" />
       
 
-            {/* <h1 data-speed="2">MicroBuddy</h1> */}
-            
             <div data-speed="2">
                 <Review/>
             </div>

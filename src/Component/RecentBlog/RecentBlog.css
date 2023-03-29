@@ -1,0 +1,11 @@
+.blog-img-cont{
+    overflow: hidden;
+}
+
+.blog-img-cont img{
+    transition: transform .5s;
+}
+
+.blog-img-cont img:hover{
+    transform: scale(1.2);
+}

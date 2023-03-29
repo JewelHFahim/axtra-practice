@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    width: 100vh;
+    height: 100vw;
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-100vh);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    width: 500vw;
+    height: 100vh;
+    transform-origin: top left;
+    transform: rotate(90deg) translateY(-105vh);
+}
+
+section {
+    overflow-y: hidden;
+    display: flex;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}

@@ -2,12 +2,12 @@ import React from 'react';
 import "./OurClients.css";
 import { Fade } from 'react-reveal';
 
-import client1 from "../../../Assets/c1.png";
-import client2 from "../../../Assets/c2.png";
-import client3 from "../../../Assets/c3.png";
-import client4 from "../../../Assets/c4.png";
-import client5 from "../../../Assets/c5.png";
-import client6 from "../../../Assets/c6.png";
+import client1 from "../../Assets/c1.png";
+import client2 from "../../Assets/c2.png";
+import client3 from "../../Assets/c3.png";
+import client4 from "../../Assets/c4.png";
+import client5 from "../../Assets/c5.png";
+import client6 from "../../Assets/c6.png";
 
 const OurClients = () => {
 

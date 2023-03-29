@@ -1,8 +1,8 @@
 import React from 'react';
 import { Fade } from 'react-reveal';
 import "./DigitalMarkeing.css";
-import video from "../../../Assets/hero-3.mp4";
-import img from "../../../Assets/1.jpg";
+import video from "../../Assets/hero-3.mp4";
+import img from "../../Assets/1.jpg";
 import { BsArrowDown } from 'react-icons/bs';
 
 
@@ -10,7 +10,7 @@ const DigitalMarkeing = () => {
 
 
     return (
-        <div className='header-container mx-20'>
+        <div className='header-container mx-[200px]'>
 
 
             <div className='text-xl font-medium flex justify-items-center leading-none'>
@@ -41,17 +41,17 @@ const DigitalMarkeing = () => {
 
             {/* Video Section */}
             <div className='vid-cont'>
-            <div className='video-section-one' >
-                <video src={video} className='vid' type="video/mp4" autoPlay muted loop ></video>
-            </div>
-            <p className='mt-8 ml-2 text-lg'>Watch <br /> <span className='font-semibold'>VIDEO INTRO</span> </p>
-            
+                <div className='video-section-one' >
+                    <video src={video} className='vid' type="video/mp4" autoPlay muted loop ></video>
+                </div>
+                <p className='mt-8 ml-2 text-lg'>Watch <br /> <span className='font-semibold'>VIDEO INTRO</span> </p>
+
             </div>
 
-            <div className=' flex items-center justify-between  mt-16 w-full '>
+            <div className='flex items-center justify-between  mt-16 w-full '>
 
-                   <div className='bounce w-[35%] pl-10'><button className='border border-black px-2 py-8 rounded-3xl'> <BsArrowDown className='text-3xl'/> </button></div>
-                    <img src={img} alt="" className='w-[65%] h-[100%]' />
+                <div className='bounce w-[35%] pl-10'><button className='border border-black px-2 py-8 rounded-3xl'> <BsArrowDown className='text-3xl' /> </button></div>
+                <img src={img} alt="" className='w-[65%] h-[100%]' />
             </div>
 
 
